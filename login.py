@@ -18,8 +18,8 @@ def Entrada():
     b_frame = tkinter.Frame(root)
     b_frame.pack()
 
-    cab = tkinter.Label(t_frame, text="Gestão Hospitalar",
-                        bg='black', fg='green', font='Ubuntu 12')
+    cab = tkinter.Label(t_frame, text="\n\nGestão Hospitalar",
+                        fg='green', font='Ubuntu 12')
 
     usuario = tkinter.Label(t_frame, text="Usuário: ")
     c_usuario = tkinter.Entry(t_frame)
@@ -28,6 +28,13 @@ def Entrada():
     c_senha = tkinter.Entry(b_frame)
 
     login = tkinter.Button(b_frame, text="LOGIN", font='Ubuntu 8', command=Get)
+
+    '''root.wm_iconbitmap(r"/home/ebony/git/Hospital-Management-System/icones/ebony_32.png")
+    root.wm_iconbitmap(bitmap=None, default=None)
+    img = tkinter.PhotoImage(file="/home/ebony/git/Hospital-Management-System/icones/hospital_128.ico")
+    img = img.subsample(1, 1)
+    labelimg = tkinter.Label(image=img, height="400", width="500")
+    labelimg.pack()'''
 
     cab.pack()
     usuario.pack()
