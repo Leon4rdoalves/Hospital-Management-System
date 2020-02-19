@@ -1,13 +1,14 @@
 import tkinter
-from window2 import Menu
+from menu import Menu
+from funcionario import Func_Tela
 
 
 def GET():
     global c_usuario, c_senha, erro
     user1 = c_usuario.get()
-    pass2 = c_senha.get()
+    pass1 = c_senha.get()
 
-    if user1 == 'Ebony' and pass2 == '123':
+    if user1 == 'ebony' and pass1 == '123':
         Menu()
 
     erro = tkinter.Label(b_frame, text='Usuário e/ou Senha, incorretos!', fg='red', font='bold')
