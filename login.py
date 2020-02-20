@@ -1,6 +1,5 @@
 import tkinter
 from menu import Menu
-from funcionario import Func_Tela
 
 
 def GET():
@@ -18,30 +17,31 @@ def GET():
 def Entrada():
     global c_usuario, c_senha, login, t_frame, b_frame, imagem
     root = tkinter.Tk()
-    root.geometry('280x250')
+    root.resizable(width=False, height=False)
+    root.geometry('280x290+0+0')
+    root.title("Ebony Sys || Login")
+
+    image = tkinter.PhotoImage(file='/home/ebony/git/Hospital-Management-System/icones/128p.png')
+    image = image.subsample(4, 4)
+
+    labelimage = tkinter.Label(image=image)
+    labelimage.place(x=120, y=127, relwidth=1.0, relheight=1.0)
+
     t_frame = tkinter.Frame(root)
     t_frame.pack()
-
     b_frame = tkinter.Frame(root)
     b_frame.pack()
 
-    cab = tkinter.Label(t_frame, text="\n\nGestão Hospitalar",
-                        fg='green', font='Ubuntu 12')
+    cab = tkinter.Label(t_frame, text="\nGestão Hospitalar\n", fg='green', font='Ubuntu 18 italic')
 
     usuario = tkinter.Label(t_frame, text="Usuário: ")
-    c_usuario = tkinter.Entry(t_frame)
+    c_usuario = tkinter.Entry(t_frame, bg='light gray')
 
     senha = tkinter.Label(b_frame, text="Senha: ")
-    c_senha = tkinter.Entry(b_frame)
+    c_senha = tkinter.Entry(b_frame, bg='light gray')
 
-    login = tkinter.Button(b_frame, text="LOGIN", font='Ubuntu 8', command=GET)
-
-    '''root.wm_iconbitmap(r"/home/ebony/git/Hospital-Management-System/icones/ebony_32.png")
-    root.wm_iconbitmap(bitmap=None, default=None)
-    img = tkinter.PhotoImage(file="/home/ebony/git/Hospital-Management-System/icones/hospital_128.ico")
-    img = img.subsample(1, 1)
-    labelimg = tkinter.Label(image=img, height="400", width="500")
-    labelimg.pack()'''
+    login = tkinter.Button(b_frame, text="LOGIN", bg='light green', font='Ubuntu 8', bd=2, relief='raised'
+                           , highlightcolor='orange', activebackground='orange', command=GET)
 
     cab.pack()
     usuario.pack()
@@ -49,7 +49,6 @@ def Entrada():
     senha.pack()
     c_senha.pack()
     login.pack()
-    root.title("Ebony Sys || Login")
     root.mainloop()
 
 
