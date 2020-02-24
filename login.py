@@ -25,7 +25,7 @@ def Entrada():
     image = image.subsample(4, 4)
 
     labelimage = tkinter.Label(image=image)
-    labelimage.place(x=120, y=127, relwidth=1.0, relheight=1.0)
+    labelimage.place(x=122, y=127, relwidth=1.0, relheight=1.0)
 
     t_frame = tkinter.Frame(root)
     t_frame.pack()
