@@ -1,7 +1,7 @@
 import tkinter
 import sqlite3
 import tkinter.messagebox
-from pacientes import PAT
+from paciente import PAT
 
 
 def Menu():
@@ -26,7 +26,7 @@ def Menu():
     botão4 = tkinter.Button(root1, text="RESERVAS", bg='light green', fg='black', font='Ubuntu 8 bold',
                             bd=2, relief='raised', highlightcolor='orange', activebackground='orange',
                             width=16, height=1)
-    botão5 = tkinter.Button(root1, text="FINANCEIRO", bg='red', fg='black', font='Ubuntu 8 bold',
+    botão5 = tkinter.Button(root1, text="FINANCEIRO", bg='light blue', fg='black', font='Ubuntu 8 bold',
                             bd=2, relief='raised', highlightcolor='orange', activebackground='orange',
                             width=16, height=1)
     botão6 = tkinter.Button(root1, text="SAIR", bg='yellow', fg='black', font='Ubuntu 8 bold',
