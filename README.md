@@ -1,6 +1,6 @@
 # Hospital-Management-System
-Sistema de gestão hospitalar, apenas para estudo. 
-Hospital management system. 4 study only!
+* Sistema de gestão hospitalar, apenas para estudo. 
+* Hospital management system. 4 study only!
 ---
 ### Telas:
 * Cadastro de Paciêntes
